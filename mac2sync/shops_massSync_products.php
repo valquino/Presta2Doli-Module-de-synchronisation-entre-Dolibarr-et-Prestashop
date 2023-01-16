@@ -197,7 +197,7 @@ if ($object->id > 0 && (empty($action) || ($action != 'edit' && $action != 'crea
 		global $db; global $id;
 		echo "<b><u>Produits synchronisés: </b></u><br>";
 		// $object->syncCategories();
-		$object->syncProducts();
+		print nl2br($object->syncProducts());
 	}
 }
 
